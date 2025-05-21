@@ -11,7 +11,7 @@ class QuizRunner:
 
         for q in self.questions:
             print("\n" + "=" * 100)
-            print(f"Qestion: {q['question']}")
+            print(f"Question: {q['question']}")
             for key, value in q['options'].items():
                 print(f"  {key}) {value}")
             print("=" * 100)
@@ -24,6 +24,6 @@ class QuizRunner:
                 print("✅ Correct!\n")
             else:
                 correct_text = q['options'][q['answer']]
-                print("❌ Incorrect! The correct answer is ({q['answer']}) {correct_text}\n")
+                print(f"❌ Incorrect! The correct answer is ({q['answer']}) {correct_text}\n")
 
         print("🎉 You've completed the quiz. Well done! :)")

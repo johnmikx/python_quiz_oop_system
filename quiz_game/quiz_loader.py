@@ -10,7 +10,7 @@ class QuizLoader:
             lines = block.strip().splitlines()
             if len(lines) < 6:
                 continue
-
+            
             question_text = lines[0][len("Question: "):]
             options = {
                 'a': lines[1][3:],
@@ -19,7 +19,7 @@ class QuizLoader:
                 'd': lines[4][3:]
             }
             correct = lines[5][len("Correct Answer: "):].strip().lower()
-
+            
             questions.append({
                 'question': question_text,
                 'options': options,
