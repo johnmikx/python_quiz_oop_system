@@ -1,4 +1,4 @@
-[*description*]
+A modular and [object-oriented Python quiz system](https://github.com/johnmikx/python_quiz_oop_system) that separates [quiz creation](https://github.com/johnmikx/python_quiz_oop_system/tree/main/quiz_creator) and [quiz-taking](https://github.com/johnmikx/python_quiz_oop_system/tree/main/quiz_game) features into class-based structures across multiple files, following clean OOP and file organization principles.
 
 ### Course Information
 
@@ -8,9 +8,21 @@
 - **Professor:** Engr. Danilo C. Madrigalejos, Jr.
 
 ## Directory Structure
-*to be updated*
+
 ```
 python_quiz_oop_system/
+├── quiz_creator/
+│   ├── creator_main.py       # Runs the Quiz Creator
+│   ├── quiz_entry.py         # Handles question input and formatting
+│   └── quiz_writer.py        # Handles writing to the text file
+├── quiz_game/
+│   ├── game_main.py          # Runs the Quiz Game
+│   ├── quiz_loader.py        # Handles loading/parsing questions from file
+│   └── quiz_runner.py        # Manages quiz flow and logic
+├── .gitignore
+├── README.md
+├── instructions.txt
+└── quiz_output.txt           # Shared quiz data between creator and game
 
 ```
 
