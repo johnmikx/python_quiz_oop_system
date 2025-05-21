@@ -23,7 +23,6 @@ python_quiz_oop_system/
 ├── README.md
 ├── instructions.txt
 └── quiz_output.txt           # Shared quiz data between creator and game
-
 ```
 
 ## About the Author
